@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrar - GAFio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/login.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="header-logo" href="login.html">
+            GAFio
+        </a>
+        <img class="header-image" src="assets/fiocruz-logo.svg" alt="logo fiocruz">
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="register">
+                <h1 class="register-title">Cadastro de Usuário</h1>
+                <form class="register-form">
+                    <div class="form-section">
+                        <label for="name">Nome Completo</label>
+                        <input id="name" type="text" required autocomplete="name" placeholder="Digite seu nome"/>
+                    </div>
+                    <div class="form-section">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required autocomplete="email" placeholder="Digite seu email"/>
+                    </div>
+                    <div class="form-section">
+                        <label for="matricula">Matrícula</label>
+                        <input id="matricula" type="password" required placeholder="Digite sua matrícula"/>
+                    </div>
+                    <div class="form-section">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" required minlength="8" placeholder="Digite sua senha"/>
+                    </div>
+                    <div class="form-section">
+                        <label for="password-confirm">Confirmar Senha</label>
+                        <input id="password-confirm" type="password" required minlength="8" placeholder="Confirme sua senha"/>
+                    </div>
+
+                    <div class="register-button">
+                        <button class="form-button" type="submit">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy GAFio Devs, 2020</p>
+    </footer>
+</body>
+</html>

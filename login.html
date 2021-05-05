@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - GAFio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/login.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="header-logo" href="login.html">
+            GAFio
+        </a>
+        <img class="header-image" src="assets/fiocruz-logo.svg" alt="logo fiocruz">
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="carrousel">
+                <img class="carrousel-image" id="carrousel-image" src="assets/fiocruz-1.jpg" alt="Imagens sobre a fundação fiocruz">
+            </div>
+            <div class="login">
+                <form class="login-form">
+                    <div class="form-section">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Digite seu email" required/>
+                        <span class="form-status" id="email-status">Preencha este campo.</span>
+                    </div>
+                    <div class="form-section">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" placeholder="Digite sua senha" required minlength="8"/>
+                        <span class="form-status" id="password-status">Preencha este campo.</span>
+                    </div>
+
+                    <button disabled id="form-button" class="form-button" type="submit">Entrar</button>
+                </form>
+
+                <div class="form-register">
+                    <p>Ainda não possui cadastro?</p>
+                    <a href="register.html">Crie já o seu</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy GAFio Devs, 2020</p>
+    </footer>
+</body>
+</html>

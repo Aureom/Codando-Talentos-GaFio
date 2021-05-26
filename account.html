@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Registrar - GAFio</title>
+    <title>Minha Conta - GAFio</title>
     <link rel="stylesheet" href="styles/styles.css">
     <script defer src="scripts/login.js"></script>
 </head>
@@ -17,31 +17,23 @@
     <main>
         <div class="main-container">
             <div class="form">
-                <h1 class="register-title">Cadastro de Usuário</h1>
+                <h2 class="account-title">Editando seus dados</h2>
                 <form class="register-form">
                     <div class="form-section">
                         <label for="name">Nome Completo</label>
-                        <input id="name" type="text" required autocomplete="name" placeholder="Digite seu nome"/>
+                        <input id="name" type="text" required autocomplete="name" value="Kaio Augusto de Souza"/>
                     </div>
                     <div class="form-section">
                         <label for="email">Email</label>
-                        <input id="email" type="email" required autocomplete="email" placeholder="Digite seu email"/>
+                        <input disabled id="email" type="email" required autocomplete="email" value="eu@kaiosouza.dev"/>
                     </div>
                     <div class="form-section">
                         <label for="matricula">Matrícula</label>
-                        <input id="matricula" type="text" required placeholder="Digite sua matrícula"/>
-                    </div>
-                    <div class="form-section">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" required minlength="8" placeholder="Digite sua senha"/>
-                    </div>
-                    <div class="form-section">
-                        <label for="password-confirm">Confirmar Senha</label>
-                        <input id="password-confirm" type="password" required minlength="8" placeholder="Confirme sua senha"/>
+                        <input id="matricula" type="text" required value="GAFIO-6D4SA82"/>
                     </div>
 
                     <div class="form-generic-button">
-                        <button class="form-button" type="submit">Cadastrar</button>
+                        <button class="form-button" type="submit">Solicitar alteração</button>
                     </div>
                 </form>
             </div>

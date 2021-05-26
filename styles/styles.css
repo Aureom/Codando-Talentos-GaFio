@@ -162,14 +162,9 @@ input {
 }
 
 /* ==================================
-                REGISTER
+            FORM GENERICO
    ================================== */
-
-.register-title {
-    text-align: center;
-}
-
-.register {
+.form {
     padding: 1rem;
     margin: 0 25%;
     flex: 40%;
@@ -183,14 +178,33 @@ input {
 }
 
 @media (max-width: 780px)  {
-    .register {
+    .form {
         margin: 0 5%;
     }
 }
 
-.register-button {
+.form-generic-button {
     display: flex;
     flex-direction: column;
     align-items: flex-end;     /* changed from align-content */
     padding: 0 1rem;
+}
+
+/* ==================================
+                REGISTER
+   ================================== */
+.register-title {
+    text-align: center;
+}
+
+/* ==================================
+                ACCOUNT
+   ================================== */
+.account-title {
+    padding: 2rem;
+    color: var(--text-secondary)
+}
+
+.delete-text {
+    padding: 0 2rem;
 }
